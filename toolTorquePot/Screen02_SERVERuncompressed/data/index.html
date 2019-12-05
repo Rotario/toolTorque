@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+<head>
+    <title>NIKKEN Chuck Torque</title>
+    <link href='main.css' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="144x144"  href="/favicon-144x144.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00878f">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+    <script src="WebSocket.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>Torque Pot</h1>
+        </header>
+        <div>
+            <table>
+				<tr>
+                    <td style="text-align:center;" colspan="2">Model: <input READONLY type="text" id="model" value="Waiting for data"></td>
+                </tr>
+				<tr>
+                    <td style="text-align:center;" colspan="2">Chuck: <input READONLY type="text" id="chuck" value="Waiting for data"></td>
+                </tr>
+				
+
+                <tr>
+                    <td colspan="1"> Torque: <input READONLY id="torque" type="number" value="0"></td>
+                    <td colspan="1"> Torque Limit: <input READONLY id="set" type="number" value="0"></td>
+                </tr>
+				<tr>
+					<td colspan="2">
+					<div id="progress">
+						<div id="torque_bar"></div>
+					</div>
+					
+					</td>
+				</tr>
+            </table>
+            <!--<p style="margin:8px 0px"><button id="cal" class="button" onclick="cal();">Calibrate</button></p>-->
+        </div>
+    </center>
+</body>
+</html>
